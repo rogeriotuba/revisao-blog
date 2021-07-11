@@ -17,6 +17,14 @@
 
         </article>
         {% endfor %}
+        <article>
+        
+        {% for post in posts %}   
+            <time>published: {{ post.published_date }}</time>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
        
+        </article>
+        {% endfor %}
     </body>
 </html>
